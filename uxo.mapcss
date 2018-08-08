@@ -1,0 +1,423 @@
+way[ID_string]{
+	color:orange;
+	width:2;
+}
+/* LAND USE */
+way[City]{
+    	/*dashes-background-color: #0000FF;*/
+}
+
+way[City]!:closed >[index=1] node,
+way[City]!:closed>[index=-1] node{
+   symbol-shape: circle;
+   symbol-stroke-color: red;
+   symbol-stroke-width: 5;
+   symbol-fill-color: orange;
+   symbol-fill-opacity: 1;
+   symbol-size: 15;
+}
+
+way[Land_use]{
+    	width: 2;
+    	color: #2EFE2E;
+	fill-color: #2EFE2E;
+}
+
+way[Land_use] > node {
+	symbol-shape: square;
+	symbol-size: 5;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#2EFE2E;
+}
+
+way[Land_use=1] {
+   	width: 2;
+    	color: #D8D8D8;
+	fill-color: #D8D8D8;
+	fill-opacity: 0.2;
+}
+
+way[Land_use=1] > node {
+	symbol-shape: square;
+	symbol-size: 5;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#D8D8D8;
+}
+
+way[Land_use=2] {
+    width: 2;
+    color: #FFA200;
+	fill-color: #FFA200;
+}
+
+way[Land_use=2] > node {
+	symbol-shape: square;
+	symbol-size: 5;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#FFA200;
+}
+
+way[Land_use=3] {
+    width: 2;
+    color: #FE2EC8;
+	fill-color: #FE2EC8;
+}
+
+way[Land_use=3] > node {
+	symbol-shape: square;
+	symbol-size: 5;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#FE2EC8;
+}
+
+way[Land_use=4] {
+    	width: 2;
+    	color: blue;
+	fill-color: blue;
+	fill-opacity: 0.1;
+
+}
+
+way[Land_use=4] > node {
+	symbol-shape: square;
+	symbol-size: 5;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:blue;
+}
+
+
+way[Land_use=5] {
+    width: 2;
+    color: #81F7F3;
+		fill-color: #81F7F3;
+	fill-opacity: 0.2;
+}
+
+way[Land_use=5] > node {
+	symbol-shape: square;
+	symbol-size: 5;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#81F7F3;
+}
+
+way[Land_use>5] {
+    width: 2;
+    color: yellow;
+fill-opacity: 0;
+}
+
+way[Land_use>5] > node {
+	symbol-shape: square;
+	symbol-size: 5;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:yellow;
+}
+
+/* BUILDING HEIGHT */
+
+way[Structures = 1] {
+    width: 2;
+    color: #c94dff;
+		fill-color: #c94dff;
+	fill-opacity: 0.2;
+}
+
+way[Structures = 1] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#c94dff;
+}
+way[Structures >1] {
+    width: 2;
+    color: #009999;
+		fill-color: #009999;
+	fill-opacity: 0.2;
+}
+
+way[Structures >1] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#009999;
+}
+way[error = 1] {
+    width: 2;
+    color: #FFAA00;
+		fill-color: #FFAA00;
+	fill-opacity: 0.2;
+}
+
+way[error = 1] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#FFAA00;
+}
+way[error = 2] {
+    width: 2;
+    color: #FF0000;
+		fill-color: #FF0000;
+	fill-opacity: 0.2;
+}
+
+way[error = 2] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#FF0000;
+}
+way[error = 3] {
+    width: 2;
+    color: #039903;
+		fill-color: #039903;
+	fill-opacity: 0.2;
+}
+
+way[error = 3] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#039903;
+}
+way[error = 4] {
+    width: 2;
+    color: #982EA3;
+		fill-color: #982EA3;
+	fill-opacity: 0.2;
+}
+
+way[error = 4] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#982EA3;
+}
+way[error = 5] {
+    width: 2;
+    color: #3099D5;
+		fill-color: #3099D5;
+	fill-opacity: 0.2;
+}
+
+way[error = 5] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#3099D5;
+}
+way[error = 6] {
+    width: 2;
+    color: #FFFF00;
+		fill-color: #FFFF00;
+	fill-opacity: 0.2;
+}
+
+way[error = 6] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#FFFF00;
+}
+way[Floors = 1] {
+    width: 2;
+    color: #4dffdb;
+		fill-color: #4dffdb;
+	fill-opacity: 0.2;
+}
+
+way[Floors = 1] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#4dffdb;
+}
+way[Floors = 2] {
+    width: 2;
+    color: #66FF33;
+		fill-color: #66FF33;
+	fill-opacity: 0.2;
+}
+
+way[Floors = 2] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#66FF33;
+}
+way[Floors = 3] {
+    width: 2;
+    color: #0000FF;
+		fill-color: #0000FF;
+	fill-opacity: 0.2;
+}
+
+way[Floors = 3] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#0000FF;
+}
+way[Floors = 4] {
+    width: 2;
+    color: #FFFF00;
+		fill-color: #FFFF00;
+	fill-opacity: 0.1;
+}
+
+way[Floors = 4] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#FFFF00;
+}
+way[Floors>= 5] {
+    width: 2;
+    color: #ffc266;
+		fill-color: #ffc266;
+	fill-opacity: 0.2;
+}
+
+way[Floors>= 5] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#ffc266;
+}
+way[Floors>= 10] {
+    width: 2;
+    color: #1aff1a;
+		fill-color: #1aff1a;
+	fill-opacity: 0.3;
+}
+
+way[Floors>= 10] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#1aff1a;
+}
+way[Floors>= 15] {
+    width: 2;
+    color: #FF5C00;
+		fill-color: #FF5C00;
+	fill-opacity: 0.2;
+}
+
+way[Floors>= 15] > node {
+	symbol-shape: square;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#FF5C00;
+}
+
+
+/* PLOT */
+way[Plot] {
+   	width: 4;
+	dashes: 15,7;
+    /*dashes-background-color: #00ff00;*/
+}
+
+way[Plot] > node {
+	symbol-shape: square;
+	symbol-size: 5;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#D8D8D8;
+}
+
+way[Plot] > node:connection {
+symbol-shape: circle;
+symbol-fill-color: yellow;
+symbol-fill-opacity: 1;
+symbol-size:10;
+
+}
+
+
+/* ERRORES */
+way[Comment] {
+    width: 3;
+    color: blue;
+	fill-color: blue;
+	fill-opacity: 0.1;
+}
+
+node:unconnected,
+node:tagged,
+way[Comment] > node {
+	symbol-shape: square;
+	symbol-size: 8;
+	symbol-fill-opacity: 1;
+	symbol-fill-color: #2E64FE;
+    symbol-stroke-color: red;
+    symbol-stroke-width: 2;
+}
+
+way[Land_use]!:closed>[index=-1]node,
+way[Land_use]!:closed>[index=1]node{
+   symbol-shape: circle;
+   symbol-stroke-color: red;
+   symbol-stroke-width: 5;
+   symbol-fill-color: orange;
+   symbol-fill-opacity: 1;
+   symbol-size: 15;
+}
+
+way[ID_string]!:closed>[index=-1]node!:connection,
+way[ID_string]!:closed>[index=1]node!:connection 
+{
+   symbol-shape: circle;
+   symbol-stroke-color: red;
+   symbol-stroke-width: 5;
+   symbol-fill-color: orange;
+   symbol-fill-opacity: 1;
+   symbol-size: 15;
+}
+node[ID_string]
+{
+   symbol-shape: circle;
+   symbol-stroke-color: yellow;
+   symbol-stroke-width: 2;
+   symbol-fill-color: blue;
+   symbol-fill-opacity: 0.65;
+   symbol-size: 10;
+}
+node:selected {
+    symbol-shape: circle;
+    symbol-size: 10;
+    symbol-fill-color: node_selected#ff0000;
+    symbol-stroke-color: node_selected#ff0000;
+}
+way[Width = "Narrow"] {
+   	width: 1.5;
+	dashes: 20,4;
+	/*dashes-background-color: #0000FF;*/
+}
+way[Width= "Narrow"] > node {
+	symbol-shape: square;
+	symbol-size: 4;
+ 	symbol-stroke-color:#0000FF;
+}
+way[Narrow]> node:connection {
+symbol-shape: circle;
+symbol-fill-color: blue;
+symbol-fill-opacity: 1;
+symbol-size:15;
+}
+
+way[Width = "Wide"] {
+	width: 3;
+	/*dashes-background-color: #99FF00;*/
+}
+way[Width= "Wide"] > node {
+	symbol-shape: square;
+	symbol-size: 4;
+	symbol-stroke-color: #99FF00;
+}
+way[Wide] > node:connection {
+symbol-shape: circle;
+symbol-fill-color: green;
+symbol-fill-opacity: 1;
+symbol-size:15;
+}
