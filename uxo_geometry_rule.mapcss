@@ -1,0 +1,32 @@
+/* {0} on a node, should be an area;*/
+node[ID_string],
+node[Land_use],
+node[Floors],
+node[Type],
+node[source:outline] {
+  throwWarning: tr("{0} on a node. Should be drawn as an area. ", "{0.tag}");
+}
+
+way[Land_use]!:closed {
+  throwError: tr("Way with {1} not closed.", "{0.tag}");
+}
+/* ID_string inside ID_string (spatial test) */
+*[ID_string][ID_string!~/no|entrance/][any(tag("layer"),"0") = any(parent_tag("layer"),"0")] ∈
+*[ID_string][ID_string!~/no|entrance/] {
+  throwWarning: tr("ID_string inside ID_string for Layer(7)");
+}
+/* Building inside ID_string (spatial test) */
+*[ID_string][building!~/no|entrance/][any(tag("layer"),"0") = any(parent_tag("layer"),"0")] ∈
+*[ID_string][building!~/no|entrance/] {
+  throwWarning: tr("Building tag left inside ID_string for Layer 7&5");
+}
+way[ID_string][Land_use]{
+  throwWarning: tr("{0} together with {1} on a way. Remove {1}.", "{0.tag}", "{1.tag}");
+  group: tr("suspicious tag combination in Layer 7 Or 5 only");
+  fixRemove: "Land_use";
+}
+way[ID_string][building=yes] {
+  throwWarning: tr("{0} together with {1} on a way. Remove {1}.", "{0.tag}", "{1.tag}");
+  group: tr("suspicious tag combination in Layer 7 Or 5");
+  fixRemove: "building";
+}
