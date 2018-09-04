@@ -112,7 +112,20 @@ way[Land_use>5] > node {
 	symbol-fill-opacity: 0;
  	symbol-stroke-color:yellow;
 }
+/* Grenada */
+way[class=paved] {
+   	width: 2;
+    	color: #FFFFFF;
+	fill-color: #FFFFFF;
+	fill-opacity: 0.2;
+}
 
+way[class=paved] > node {
+	symbol-shape: circle;
+	symbol-size: 2;
+	symbol-fill-opacity: 0;
+ 	symbol-stroke-color:#FFFFFF;
+}
 /* BUILDING HEIGHT */
 
 way[Structures = 1] {
