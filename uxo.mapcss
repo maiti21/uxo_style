@@ -115,8 +115,8 @@ way[Land_use>5] > node {
 /* Grenada */
 way[class="paved"] {
    	width: 2;
-    	color: #FFFFFF;
-	fill-color: #FFFFFF;
+	color: #FFFFFF;
+	fill-color: #5B5B5B;
 	fill-opacity: 0.2;
 }
 
@@ -128,7 +128,7 @@ way[class="paved"] > node {
 }
 way[class="unpaved"] {
    	width: 2;
-    	color: #FFBB69;
+	color: #FFBB69;
 	fill-color: #FFBB69;
 	fill-opacity: 0.2;
 }
@@ -144,8 +144,8 @@ way[class="unpaved"] > node {
 way[Structures = 1] {
     width: 2;
     color: #c94dff;
-		fill-color: #c94dff;
-	fill-opacity: 0.2;
+    fill-color: #c94dff;
+    fill-opacity: 0.2;
 }
 
 way[Structures = 1] > node {
@@ -170,8 +170,8 @@ way[Structures >1] > node {
 way[error = 1] {
     width: 2;
     color: #FFAA00;
-		fill-color: #FFAA00;
-	fill-opacity: 0.2;
+    fill-color: #FFAA00;
+    fill-opacity: 0.2;
 }
 
 way[error = 1] > node {
@@ -183,8 +183,8 @@ way[error = 1] > node {
 way[error = 2] {
     width: 2;
     color: #FF0000;
-		fill-color: #FF0000;
-	fill-opacity: 0.2;
+    fill-color: #FF0000;
+    fill-opacity: 0.2;
 }
 
 way[error = 2] > node {
